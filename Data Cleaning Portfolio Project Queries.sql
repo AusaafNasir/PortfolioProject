@@ -149,13 +149,13 @@ WITH RowNumCTE AS(
 Select *,
 	ROW_NUMBER() OVER (
 	PARTITION BY ParcelID,
-				 PropertyAddress,
-				 SalePrice,
-				 SaleDate,
-				 LegalReference
-				 ORDER BY
-					UniqueID
-					) as row_num
+		     PropertyAddress,
+		     SalePrice,
+		     SaleDate,
+		     LegalReference
+		     ORDER BY
+		      UniqueID
+			) as row_num
 
 From NashvilleHousing
 --order by ParcelID
