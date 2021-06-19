@@ -8,7 +8,7 @@ from NashvilleHousing
 
 -- Standardize Date Format
 
-/* method working temporarily but not storing the results (reason?)
+/* method working temporarily but not storing the results (reason?) on my laptop
 
 Select SaleDate, CONVERT(Date,SaleDate)
 From NashvilleHousing
